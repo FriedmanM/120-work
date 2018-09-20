@@ -10,8 +10,24 @@ function draw() {
   push();
   translate( 100, 100 );
   rotate( "50" );
-  rect( -80, 70, 100, 250, 98 );
+  fill( 'rgb(0,0,0)' );
+  rect( -80, 70, 75, 250, 0, 0, 98, 98 );
+  push();
+  //shirt stripe
+  translate( -60, 78 );
+  stroke( "green" );
+  line( 0, -3, 0, 237 );
+  stroke( "green" );
+  line( 40, 0, 40, 247 );
   pop();
+  pop();
+
+  //left hand
+  push();
+  translate( 75, 150 );
+  ellipse( 0, 0, 120, 80 );
+  pop();
+  //right arm
 
   //Body- will use a rectangle
   push();
@@ -33,13 +49,13 @@ function draw() {
   stroke( "green" );
   strokeWeight( "2" );
   fill( 'rgba(0, 0, 0, 0.65)' );
-  ellipse ( 0, 130, 10, 10 );
+  ellipse( 0, 130, 10, 10 );
 
   //button2
   stroke( "green" );
   strokeWeight( "2" );
   fill( 'rgba(0, 0, 0, 0.65)' );
-  ellipse ( 0, 180, 10, 10 );
+  ellipse( 0, 180, 10, 10 );
 
   //button3
   stroke( "green" );
@@ -51,13 +67,13 @@ function draw() {
   stroke( "green" );
   strokeWeight( "2" );
   fill( 'rgba(0, 0, 0, 0.65)' );
-  ellipse ( 0, 280, 10, 10 );
+  ellipse( 0, 280, 10, 10 );
 
   //button5
   stroke( "green" );
   strokeWeight( "2" );
   fill( 'rgba(0, 0, 0, 0.65)' );
-  ellipse ( 0, 330, 10, 10 );
+  ellipse( 0, 330, 10, 10 );
   pop();
 
   //stripes on shirt
