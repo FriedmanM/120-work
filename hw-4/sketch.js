@@ -12,8 +12,10 @@ function draw() {
   rotate( "50" );
   fill( 'rgb(0,0,0)' );
   rect( -80, 70, 75, 250, 0, 0, 98, 98 );
+
+
+  //shirt stripes on arm - green lines
   push();
-  //shirt stripe
   translate( -60, 78 );
   stroke( "green" );
   line( 0, -3, 0, 237 );
@@ -22,12 +24,69 @@ function draw() {
   pop();
   pop();
 
+  //fingers, will use triangles
+  push();
+  translate( 85, 150 );
+  rotate( radians(-15) );
+  fill( 'rgb(0, 56, 255)')
+  triangle( 0, 0, 40, -20, 25, -80 );
+  pop();
+
+  push();
+  translate( 55, 150 );
+  rotate( radians(-15) );
+  fill( 'rgb(0, 56, 255)')
+  triangle( 0, 0, 40, -20, 25, -80 );
+  pop();
+
+  push();
+  translate( 25, 150 );
+  rotate( radians(-15) );
+  fill( 'rgb(0, 56, 255)')
+  triangle( 0, 0, 40, -20, 25, -80 );
+  pop();
+
+  push();
+  translate( 120, 150 );
+  rotate( radians(-15) );
+  fill( 'rgb(0, 56, 255)')
+  triangle( 0, 0, 40, -20, 25, -20 );
+  pop();
+
   //left hand
   push();
   translate( 75, 150 );
+  rotate( radians(-15));
+  fill ( 'rgb(116, 128, 244)' )
   ellipse( 0, 0, 120, 80 );
   pop();
+
   //right arm
+  push();
+  translate( 425, 340 );
+  rotate( radians(-15));
+  fill( 'rgb(0,0,0)');
+  rect( 0, 0, 75, 250, 25, 98, 0, 0 );
+  pop();
+
+  //right arm stripes - will use lines with green fill
+  push();
+  translate( 450, 350 );
+  rotate( radians(-15) );
+  stroke( "green" );
+  line( 0, 0, 0, 234 );
+  stroke( "green" );
+  line( 40, -6, 40, 234 );
+  pop();
+  pop();
+
+  //right hand
+  push();
+  translate( 530, 600 );
+  rotate( radians(-15));
+  fill ( 'rgb(116, 128, 244)' )
+  ellipse( 0, 0, 120, 80 );
+  pop();
 
   //Body- will use a rectangle
   push();
@@ -119,9 +178,47 @@ function draw() {
 
   pop();
 
+  //crazy hair head thing, will use triangles and rotate them
+  push();
+  translate( 300, 120);
+  fill( "gold" );
+  triangle( -50, 50, 50, 50, 0, -120);
+  pop();
+
+  push();
+  translate( 375, 120 );
+  rotate( radians(35) );
+  fill( "gold" );
+  triangle( -50, 50, 50, 50, 0, -120);
+  pop();
+
+  push();
+  translate( 350, 120 );
+  rotate( radians(15) );
+  fill( "gold" );
+  triangle( -50, 50, 50, 50, 0, -120);
+  pop();
+
+  push();
+  translate( 225, 120 );
+  rotate( radians(-35) );
+  fill( "gold" );
+  triangle( -50, 50, 50, 50, 0, -120);
+  pop();
+
+  push();
+  translate( 250, 120 );
+  rotate( radians(-15) );
+  fill( "gold" );
+  triangle( -50, 50, 50, 50, 0, -120);
+  pop();
+
+
+
   //head- will use an ellipse (more vertical)
   push();
   translate( 300, 240 );
+  fill ( 'rgb(116, 128, 244)' )
   ellipse( 0, 0, 200, 220 );
 
   /*Left eye - will use horizontal ellipses, with ellipses inside,
@@ -135,11 +232,11 @@ function draw() {
   ellipse ( 0, 0, 4, 4);
   pop();
 
-  //Right eye- same as left eye
+  //Right eye- same as left eye with different color
   push();
   translate ( 40, -40 );
   ellipse( 0, 0, 20, 12 );
-  fill( "blue" );
+  fill( 'rgb(41, 144, 154)' );
   ellipse( 0, 0, 12, 10 );
   fill( 'rgb(0,0,0)');
   ellipse ( 0, 0, 4, 4);
