@@ -1,6 +1,6 @@
 # Michael Friedman
 
-["Monster Self Portrait!" Sketch](https://https://friedmanm.github.io/120-work/hw-4/)
+["Monster Self Portrait!" Sketch](https://friedmanm.github.io/120-work/hw-4/)
 ---
 
 ## This week in Review:
