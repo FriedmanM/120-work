@@ -14,6 +14,8 @@ endlessLINE.yloc2 = 0;
 endlessLINE.xloc3 = 0;
 endlessLINE.yloc3 = 0;
 
+let moduloUsage = 2*2%1; //didn't use modulo, so I'm including it here...
+
 //for user input circle
 let circle_min = 20;
 let circle_max;
