@@ -59,5 +59,7 @@ function draw() {
 
     if (mouseIsPressed) {
         ball.width += 1;
+      } else if (ball.width > 40){
+        ball.width -= 1;
       }
 }
