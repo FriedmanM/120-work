@@ -7,6 +7,8 @@ ball.delta_y = 1;
 ball.scale_x = 1;
 ball.scale_y = 1;
 
+
+//load a background
 var bg;
 
 function preload() {
@@ -31,6 +33,7 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
+    //if statements to reduce the ball when it hits walls
     if ((ball.x >= width || ball.x <= 0) && ball.width >= 40) {
         ball.width -= 10;
     }
@@ -39,11 +42,12 @@ function draw() {
         ball.width -= 10;
     }
 
-
+    //variables to randomize the color of the fill
     var rred = floor (random(0, 256));
     var rgreen = floor (random(0, 256));
     var rblue = floor (random(0, 256));
 
+    //variables to randomize the color of the stroke
     var sred = floor (random(0, 256));
     var sgreen = floor (random(0, 256));
     var sblue = floor (random(0, 256));
