@@ -8,7 +8,9 @@ I was assigned to review this code and explain it line for line. I will attempt 
 ---
 
 *This following lines create an object containted called ball*
+//
 let ball = {};
+//
 ball.width = 40;
 ball.x = 10;
 ball.y = 10;
