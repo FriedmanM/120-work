@@ -8,9 +8,8 @@ I was assigned to review this code and explain it line for line. I will attempt 
 ---
 
 *This following lines create an object containted called ball*
-//
-let ball = {};
-//
+
+let ball = {}
 ball.width = 40;
 ball.x = 10;
 ball.y = 10;
@@ -18,21 +17,24 @@ ball.delta_x = 1;
 ball.delta_y = 1;
 ball.scale_x = 1;
 ball.scale_y = 1;
+---
 
 *creates the canvas, size of canvas, and background color*
 function setup() {
     createCanvas(windowWidth, 400);
     background(255);
 }
-
+---
 
 *calls the draw function*
 function draw() {
+---
 *creating the x and y axis for the ball. the function does this by multiplying the delta variable by the scale variable*
 *creates the x axis for the object 'ball'*
     ball.x += ball.delta_x * ball.scale_x;
 *creates the y axis for the object 'ball'*
     ball.y += ball.delta_y * ball.scale_y;
+---
 
 *if statement to reverse the ball when it hits the wall. It basically says "if the x location of the ball is greater than the width of canvas, or if the x location of ball is less than or equal to zero, reverse direction (by making ball.x negative)". Same goes for the y axis.*
     if (ball.x >= width || ball.x <= 0) {
