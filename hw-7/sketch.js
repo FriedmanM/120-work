@@ -21,6 +21,7 @@ function draw() {
     push();
     background(bg);
     pop();
+
     push();
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
@@ -48,7 +49,7 @@ function draw() {
     pop();
 }
 
-function mousePressed() {
+function mouseIsPressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
