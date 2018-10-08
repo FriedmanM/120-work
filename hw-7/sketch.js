@@ -31,9 +31,14 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    if (ball.x >= width || ball.x <= 0 && ball.width >= 40) {
-        ball.width -= 1;
+    if ((ball.x >= width || ball.x <= 0) && ball.width >= 40) {
+        ball.width -= 10;
     }
+
+    if ((ball.y >= width || ball.y <= 0) && ball.width >= 40) {
+        ball.width -= 10;
+    }
+
 
     var rred = floor (random(0, 256));
     var rgreen = floor (random(0, 256));
@@ -46,15 +51,8 @@ function draw() {
     stroke( sred, sgreen, sblue);
     fill( rred, rgreen, rblue);
     rect(ball.x, ball.y, ball.width, ball.width);
-}
 
-function mouseIsPressed() {
-    ball.width += 1;
-
-
-
-    /*
-    ball.scale_x = map(mouseX, 0, width, 0.5, 10);
-    ball.scale_y = map(mouseY, 0, height, 0.5, 10);
-    */
+    if (mouseIsPressed) {
+        ball.width += 1;
+      }
 }
