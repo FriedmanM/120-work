@@ -1,6 +1,6 @@
 # Michael Friedman
 
-["Algorithmic" Sketch](https://friedmanm.github.io/120-work/hw-6/)
+["Algorithmic" Sketch](https://friedmanm.github.io/120-work/hw-7/)
 ---
 
 ## This week's ReadMe Project:
