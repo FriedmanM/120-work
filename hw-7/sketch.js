@@ -15,14 +15,11 @@ function preload() {
 
 function setup() {
     createCanvas(800, 600);
+    background(bg);
 }
 
 function draw() {
-    push();
-    background(bg);
-    pop();
 
-    push();
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
@@ -36,20 +33,19 @@ function draw() {
 
 
     var rred = floor (random(0, 256));
-    var rgreen = random(0, 256);
-    var rblue = random(0, 256);
+    var rgreen = floor (random(0, 256));
+    var rblue = floor (random(0, 256));
 
-    var sred = random(0, 256);
-    var sgreen = random(0, 256);
-    var sblue = random(0, 256);
+    var sred = floor (random(0, 256));
+    var sgreen = floor (random(0, 256));
+    var sblue = floor (random(0, 256));
 
     stroke( sred, sgreen, sblue);
     fill( rred, rgreen, rblue);
     rect(ball.x, ball.y, ball.width, ball.width);
-    pop();
 }
 
-function mouseIsPressed() {
+function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
