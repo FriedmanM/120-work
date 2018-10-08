@@ -17,11 +17,11 @@ function setup() {
     createCanvas(800, 600);
 }
 
-
-
 function draw() {
+    push();
     background(bg);
-
+    pop();
+    push();
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
@@ -45,6 +45,7 @@ function draw() {
     stroke( sred, sgreen, sblue);
     fill( rred, rgreen, rblue);
     rect(ball.x, ball.y, ball.width, ball.width);
+    pop();
 }
 
 function mousePressed() {
