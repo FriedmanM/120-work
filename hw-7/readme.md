@@ -46,7 +46,7 @@ function draw() {
 }
 *function called that causes things to happen when the mouse is clicked (only initiated once per click)*
 function mousePressed() {
-*maps the mouse x and mouse y location toball.scale. This changes the direction of the ball from .5 to 10, depending on the x or y location of the cursor.*
+*maps the mouse x and mouse y location toball.scale. This changes the direction and speed of the ball from .5 to 10, depending on the x or y location of the cursor.*
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
