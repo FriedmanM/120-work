@@ -25,14 +25,14 @@ function draw() {
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
 
-/*
+
     if (ball.x >= width || ball.x <= 0) {
         ball.delta_x = -1 * ball.delta_x;
     }
     if (ball.y >= height || ball.y <= 0) {
         ball.delta_y = -1 * ball.delta_y;
     }
-*/
+
 
     var rred = floor (random(0, 256));
     var rgreen = random(0, 256);
