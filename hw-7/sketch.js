@@ -12,6 +12,7 @@ ball.scale_y = 1;
 var bg;
 
 function preload() {
+  //chose a photo with creative commons (ability to reuse for non-commercial)
   bg = loadImage("assets/space.jpg");
 }
 
