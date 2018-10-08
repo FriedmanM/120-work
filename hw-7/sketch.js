@@ -31,6 +31,9 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
+    if (ball.x >= width || ball.x <= 0 && ball.width >= 40) {
+        ball.width -= 1;
+    }
 
     var rred = floor (random(0, 256));
     var rgreen = floor (random(0, 256));
@@ -45,7 +48,13 @@ function draw() {
     rect(ball.x, ball.y, ball.width, ball.width);
 }
 
-function mousePressed() {
+function mouseIsPressed() {
+    ball.width += 1;
+
+
+
+    /*
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
+    */
 }
