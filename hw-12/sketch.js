@@ -33,12 +33,15 @@ function draw() {
 		text("Game Over", width/2, height/2);
 */
 
-/*title of game
-fill( "white" );
-textAlign(CENTER);
-textSize(55);
-text("Link to P5", width/2, 100);
-*/
+  //title of game
+  fill( "white" );
+  textAlign(CENTER);
+  textSize(35);
+  text("Link to P5st", width/2, 50);
+
+  fill( "white" );
+  line( 0, 55, width, 55);
+
 }
 
 function mousePressed() {
