@@ -40,6 +40,7 @@ function draw() {
   text("Link to P5st", width/2, 50);
 
   fill( "white" );
+  strokeWeight(4);
   line( 0, 55, width, 55);
 
 }
