@@ -38,17 +38,13 @@ function draw() {
 		text("Game Over", width/2, height/2);
 
   //Game Title
-  push();
   stroke( "black" );
   textAlign(CENTER);
   textSize(35);
   text("Link to P5st", width/2, 35);
-  pop();
 
-  push();
   strokeWeight(4);
   stroke( "black" );
   line( 0, 45, width, 45 );
-  pop();
   }
 }
