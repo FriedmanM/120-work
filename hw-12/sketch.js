@@ -25,7 +25,7 @@ function draw() {
     link[0].display();
     link[0].move();
 
-    for (let i = 0; i < bubbles.length; i++) {
+    for (let i = 0; i < rocks.length; i++) {
         rocks[i].move();
         rocks[i].show();
         rocks[i].edgeCheck(rocks);
