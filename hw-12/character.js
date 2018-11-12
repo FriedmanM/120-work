@@ -35,7 +35,7 @@ class Character {
     }
     //Right
     if(keyIsDown(39)) {
-      if(this.posX < widthX - 5) {
+      if(this.posX < width - 5) {
         this.posX += 5;
       }
     }
