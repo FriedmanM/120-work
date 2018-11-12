@@ -1,20 +1,15 @@
 var gameOver = false;
 var link = [];
-var bg;
-
-function preload() {
-  bg = loadImage("assets/treasure.png");
-}
 
 function setup() {
 	createCanvas(800, 600);
-  background(bg);
   let c = new Character(width/2, height/2, 25);
   link.push(c);
 }
 
 function draw() {
-
+  background( 'rgb(144, 205, 96)' );
+  
   link[0].display();
   link[0].move();
 
