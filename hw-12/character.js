@@ -29,7 +29,7 @@ class Character {
     }
     //LEFT
     if(keyIsDown(37)) {
-      if(this.posX > 5) {
+      if(this.posX > 0) {
         this.posX -= 5;
       }
     }

@@ -33,18 +33,13 @@ function draw() {
 		text("Game Over", width/2, height/2);
 */
 
-//title of game
+/*title of game
 fill( "white" );
 textAlign(CENTER);
 textSize(55);
 text("Link to P5", width/2, 100);
-
+*/
 }
-
-/* anytime a key is pressed, call this function
-function keyPressed() {
-
-}*/
 
 function mousePressed() {
 	// put a message in the console w
