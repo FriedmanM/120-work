@@ -4,8 +4,8 @@ class Rock {
     this.x = x;
     this.y = y;
     this.r = r;
-    this.deltaX = random(-10, 10);
-    this.deltaY = random(-10, 10);
+    this.deltaX = random(-5, 5);
+    this.deltaY = random(-5, 5);
   }
 
   show() {
@@ -22,15 +22,15 @@ class Rock {
   }
 
   edgeCheck(r) {
-    for (let i = (r.length - 1); i >= 0; i--) {
+    for (let i = (this.length - 1); i >= 0; i--) {
       if ((this.x + this.r) >= width || (this.x - this.r) <= 0) {
-          r.splice(i, 1);
+          this.splice(i, 1);
         }
       }
 // check if the ball has hit a horizontal wall (top or bottom walls)
-    for (let i = (r.length - 1); i >= 0; i--) {
+    for (let i = (this.length - 1); i >= 0; i--) {
       if ((this.y + this.r) >= height || (this.y - this.r) <= 0) {
-          r.splice(i, 1);
+          this.splice(i, 1);
       }
     }
   }
