@@ -15,16 +15,16 @@ class Character {
   }
 
   move() {
-    //UP
-    if(keyIsDown(UP_ARROW)) {
-      if(this.poxY > 5) {
-        this.posY -= 5;
-      }
-    }
     //DOWN
     if(keyIsDown(40)) {
       if(this.posY < height - 55) {
         this.posY += 5;
+      }
+    }
+    //UP
+    if(keyIsDown(UP_ARROW)) {
+      if(this.poxY > 5) {
+        this.posY -= 5;
       }
     }
     //LEFT
