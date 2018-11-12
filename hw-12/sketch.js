@@ -3,7 +3,7 @@ var link = [];
 var bg;
 
 function preload() {
-  bg = loadImage("assets/Treasure_Field.png");
+  bg = loadImage("assets/treasure.png");
 }
 
 function setup() {
