@@ -1,4 +1,4 @@
-class Rocks {
+class Rock {
   constructor(x, y, r) {
     this.color = 'brown';
     this.x = x;
