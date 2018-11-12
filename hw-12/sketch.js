@@ -8,13 +8,12 @@ function preload() {
 
 function setup() {
 	createCanvas(800, 600);
-
+  background(bg);
   let c = new Character(width/2, height/2, 25);
   link.push(c);
 }
 
 function draw() {
-  background(bg);
 
   link[0].display();
   link[0].move();
@@ -46,12 +45,4 @@ function draw() {
   stroke( "white" );
   line( 0, 45, width, 45 );
   pop();
-}
-
-function mousePressed() {
-	// put a message in the console w
-	// mouse X position
-
-	var theText = "X: " + mouseX + ", Y: " + mouseY;
-	console.log(theText);
 }
