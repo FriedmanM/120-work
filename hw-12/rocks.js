@@ -22,14 +22,14 @@ class Rock {
   }
 
   edgeCheck(r) {
-    if (this.x + this.r >= width || this.x - this.r <= 0) {
-      for (let i = r.length - 1; i >= 0; i--) {
+    for (let i = r.length - 1; i >= 0; i--) {
+      if (this.x + this.r >= width || this.x - this.r <= 0) {
           r.splice(i, 1);
         }
       }
 // check if the ball has hit a horizontal wall (top or bottom walls)
-    if (this.y + this.r >= height || this.y - this.r <= 0) {
-      for (let i = r.length - 1; i >= 0; i--) {
+    for (let i = r.length - 1; i >= 0; i--) {
+      if (this.y + this.r >= height || this.y - this.r <= 0) {
           r.splice(i, 1);
       }
     }
