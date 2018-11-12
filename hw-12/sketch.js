@@ -19,13 +19,13 @@ function draw() {
   link[0].display();
   link[0].move();
 
-//	var playerDistance = dist(playerX, playerY);
+/*	var playerDistance = dist(playerX, playerY);
 		//if(playerDistance < 50) {
 			// THEYVE COLLIDED! END GAME!
 			//gameOver = true;
 		}
 
-	} else {
+	 else {
 
 		// if game IS over...
 		fill(255,44,0);

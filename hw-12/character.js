@@ -17,7 +17,7 @@ class Character {
   move() {
     //UP
     if(keyIsDown(38)) {
-      if(this.poxY  5) {
+      if(this.poxY > 5) {
         this.posY -= 5;
       }
     }
