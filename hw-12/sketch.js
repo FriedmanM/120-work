@@ -38,7 +38,6 @@ function draw() {
         rocks[i].move();
         rocks[i].show();
         rocks[i].edgeCheck(rocks);
-        rocks[i].linkCheck(rocks, link, score);
     }
     link[0].display();
     link[0].move();
