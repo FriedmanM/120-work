@@ -7,7 +7,7 @@ function unloadScrollBars() {
 }
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(800, 600);
 
   let c = new Character(width/2, height/2, 25);
   link.push(c);
