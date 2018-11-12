@@ -46,7 +46,7 @@ function draw() {
 
 function rockTimer() {
     let b = new Rock(random(width), random(height), 10);
-    rock.push(b);
+    rocks.push(b);
     // this has the effect of calling itself every x-milliseconds
     setTimeout(rockTimer, random(2000));
 }
