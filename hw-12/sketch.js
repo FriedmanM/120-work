@@ -34,15 +34,18 @@ function draw() {
 */
 
   //title of game
+  push();
   fill( "white" );
   textAlign(CENTER);
   textSize(35);
   text("Link to P5st", width/2, 35);
+  pop();
 
+  push();
   strokeWeight(4);
   stroke( "white" );
   line( 0, 45, width, 45 );
-
+  pop();
 }
 
 function mousePressed() {
