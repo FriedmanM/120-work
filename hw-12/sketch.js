@@ -37,7 +37,7 @@ function draw() {
   fill( "white" );
   textAlign(CENTER);
   textSize(35);
-  text("Link to P5st", width/2, 50);
+  text("Link to P5st", width/2, 35);
 
   fill( "white" );
   strokeWeight(4);
