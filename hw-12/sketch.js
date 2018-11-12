@@ -2,11 +2,7 @@ var playerX;	// create variables to store
 var playerY;	// player coordinates
 var gameOver = false;
 
-var character;
 
-function preload() {
-  character = loadImage("assets/16bit_link.gif");
-}
 
 function setup() {
 	createCanvas(windowWidth*2, windowHeight*2);
@@ -21,14 +17,14 @@ function setup() {
 function draw() {
   background( "black" );
 
-  image(character, 100, 100);
+  //image(character, 100, 100);
 
 	// only do game logic if game isn't over
 	if(!gameOver) {
 
 		// check keys one at a time
 
-		// PLAYER
+	/*	// PLAYER
 		if(keyIsDown(38)) { // UP
 			// can p1 go up?
 			if(playerY > 5) {
@@ -63,7 +59,7 @@ function draw() {
 		//if(playerDistance < 50) {
 			// THEYVE COLLIDED! END GAME!
 			//gameOver = true;
-		/*}
+		}
 
 	} else {
 
