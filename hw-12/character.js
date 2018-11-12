@@ -17,13 +17,13 @@ class Character {
   move() {
     //UP
     if(keyIsDown(38)) {
-      if(this.poxY > 5) {
+      if(this.poxY  5) {
         this.posY -= 5;
       }
     }
     //DOWN
     if(keyIsDown(40)) {
-      if(this.posY < height - 5) {
+      if(this.posY < height - 28) {
         this.posY += 5;
       }
     }
@@ -35,7 +35,7 @@ class Character {
     }
     //Right
     if(keyIsDown(39)) {
-      if(this.posX < width - 5) {
+      if(this.posX < width - 20) {
         this.posX += 5;
       }
     }
