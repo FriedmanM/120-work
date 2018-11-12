@@ -1,9 +1,9 @@
 var gameOver = false;
 var link = [];
+var bg;
 
-function unloadScrollBars() {
-    document.documentElement.style.overflow = 'hidden';  // firefox, chrome
-    document.body.scroll = "no"; // ie only
+function preload() {
+  bg = loadImage("assets/Treasure_Field.png");
 }
 
 function setup() {
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-  background( "black" );
+  background(bg);
 
   link[0].display();
   link[0].move();
