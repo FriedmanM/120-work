@@ -34,4 +34,14 @@ class Rock {
       }
     }
   }
+  linkCheck(rocks, link, score) {
+    let d = dist(link.posX, link.posY, rocks[n].x, rocks.y);
+    let combinedR = 42;
+      for (let n = 0; n < rocks.length - 1; n++) {
+        if (d  <= combinedR ) {
+          rocks.splice(n, 1);
+          score += 1;
+        }
+      }
+  }
 }
