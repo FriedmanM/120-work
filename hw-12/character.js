@@ -17,26 +17,26 @@ class Character {
   move() {
     //UP
     if(keyIsDown(38)) {
-      if(poxY > 5) {
-        posY -= 5;
+      if(this.poxY > 5) {
+        this.posY -= 5;
       }
     }
     //DOWN
     if(keyIsDown(40)) {
-      if(posY < height - 5) {
-        posY += 5;
+      if(this.posY < height - 5) {
+        this.posY += 5;
       }
     }
     //LEFT
     if(keyIsDown(37)) {
-      if(posX > 5) {
-        posX -= 5;
+      if(this.posX > 5) {
+        this.posX -= 5;
       }
     }
     //Right
     if(keyIsDown(39)) {
-      if(posX < widthX - 5) {
-        posX = posX + 5;
+      if(this.posX < widthX - 5) {
+        this.posX += 5;
       }
     }
   }
