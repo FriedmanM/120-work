@@ -21,7 +21,7 @@ function setup() {
 
 function draw() {
   background( 'rgb(144, 205, 96)' );
-  if (!gameover) {
+  if (!gameOver) {
     link[0].display();
     link[0].move();
 
