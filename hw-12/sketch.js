@@ -3,6 +3,17 @@ var link = [];
 var rocks = [];
 var score = 0;
 
+function linkCheck() {
+  for (let n = 0; n < rocks.length - 1; n++) {
+    let d = dist(link[0].posX, link[0].posY, rocks[n].x, rocks[n].y);
+    let combinedR = 42;
+    if (d  <= combinedR ) {
+      rocks.splice(n, 1);
+      score += 1;
+    }
+  }
+}
+
 function rockTimer() {
   let b = new Rock(random(width), random(height), 10);
   rocks.push(b);
@@ -17,8 +28,7 @@ function setup() {
   rocks.push(b);
   link.push(c);
   rockTimer();
-
-
+  linkCheck();
 }
 
 function draw() {
