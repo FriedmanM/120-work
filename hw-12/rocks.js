@@ -8,7 +8,7 @@ class Rocks {
     this.deltaY = random(-10, 10);
   }
 
-  display() {
+  show() {
     push();
     fill(this.color);
     translate(this.x, this.y);
