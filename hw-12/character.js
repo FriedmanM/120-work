@@ -23,7 +23,7 @@ class Character {
     }
     //UP
     if(keyIsDown(87)) {
-      if(this.poxY > 5) {
+      if(this.posY > 5) {
         this.posY -= 5;
       }
     }
