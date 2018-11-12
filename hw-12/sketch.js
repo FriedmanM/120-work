@@ -5,13 +5,14 @@ var score = 0;
 
 function linkCheck() {
   while (gameOver != false) {
-  for (let n = 0; n < rocks.length - 1; n++) {
-    let d = dist(link[0].posX, link[0].posY, rocks[n].x, rocks[n].y);
-    let combinedR = 22;
-    console.log(d);
-    if (d  <= combinedR ) {
-      rocks.splice(n, 1);
-      score += 1;
+    for (let n = 0; n < rocks.length - 1; n++) {
+      let d = dist(link[0].posX, link[0].posY, rocks[n].x, rocks[n].y);
+      let combinedR = 22;
+      console.log(d);
+      if (d  <= combinedR ) {
+        rocks.splice(n, 1);
+        score += 1;
+      }
     }
   }
 }
