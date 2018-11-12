@@ -31,7 +31,6 @@ function setup() {
   rocks.push(b);
   link.push(c);
   rockTimer();
-  linkCheck();
 }
 
 function draw() {
@@ -44,6 +43,7 @@ function draw() {
     }
     link[0].display();
     link[0].move();
+    linkCheck();
   }
   else {
 		// If game is over, end game and display text
