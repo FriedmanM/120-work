@@ -5,7 +5,7 @@ var gameOver = false;
 var character;
 
 function preload() {
-  character = loadImage("assets/16bit_link.jpg");
+  character = loadImage("assets/16bit_link.gif");
 }
 
 function setup() {
