@@ -29,7 +29,7 @@ class Rock {
       }
 // check if the ball has hit a horizontal wall (top or bottom walls)
     for (let i = (this.length - 1); i >= 0; i--) {
-      if ((this.y + this.r) >= height || (this.y - this.r) <= 0) {
+      if ((this.y + this.r) >= height - 45 || (this.y - this.r) <= 0) {
           r.splice(i, 1);
       }
     }

@@ -42,7 +42,7 @@ function draw() {
   stroke( "black" );
   textAlign(CENTER);
   textSize(35);
-  text("Link to P5st", width/2, 35);
+  text("A Link in P5st", width/2, 35);
   pop();
 
   push();
