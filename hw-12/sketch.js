@@ -1,26 +1,23 @@
-var playerX;	// create variables to store
-var playerY;	// player coordinates
 var gameOver = false;
-
+var link = [];
 
 
 function setup() {
-	createCanvas(windowWidth*2, windowHeight*2);
+	createCanvas(windowWidth, windowHeight);
 
-
-	// set player starting positions
-	playerX = width - 100;
-	playerY = height/2;
-
+  let c = new Character(width/2, height/2, 25);
+  link.push(c);
 }
 
 function draw() {
   background( "black" );
 
+  link[0].display();
+  link[0].move();
+
   //image(character, 100, 100);
 
 	// only do game logic if game isn't over
-	if(!gameOver) {
 
 		// check keys one at a time
 
@@ -68,13 +65,12 @@ function draw() {
 		textSize(60);
 		text("Game Over", width/2, height/2);
 */
-	}
 
 //title of game
-fill( "black" );
+fill( "white" );
 textAlign(CENTER);
 textSize(55);
-text("Escape Game!", windowWidth/2, 100);
+text("Link to P5", windowWidth/2, 100);
 
 }
 
