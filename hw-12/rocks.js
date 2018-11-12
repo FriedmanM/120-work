@@ -24,13 +24,13 @@ class Rock {
   edgeCheck(r) {
     for (let i = (this.length - 1); i >= 0; i--) {
       if ((this.x + this.r) >= width || (this.x - this.r) <= 0) {
-          this.splice(i, 1);
+          r.splice(i, 1);
         }
       }
 // check if the ball has hit a horizontal wall (top or bottom walls)
     for (let i = (this.length - 1); i >= 0; i--) {
       if ((this.y + this.r) >= height || (this.y - this.r) <= 0) {
-          this.splice(i, 1);
+          r.splice(i, 1);
       }
     }
   }
