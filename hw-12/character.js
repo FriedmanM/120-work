@@ -22,7 +22,7 @@ class Character {
       }
     }
     //UP
-    if(keyIsDown(UP_ARROW)) {
+    if(keyIsDown(ArrowUp)) {
       if(this.poxY > 5) {
         this.posY -= 5;
       }
