@@ -39,7 +39,7 @@ function draw() {
 
   //Game Title
   push();
-  fill( 'rgb(24, 77, 13)' );
+  fill( 'black' );
   textAlign(CENTER);
   textSize(35);
   text("Link to P5st", width/2, 35);
@@ -47,7 +47,7 @@ function draw() {
 
   push();
   strokeWeight(4);
-  stroke( 'rgb(24, 77, 13)' );
+  stroke( 'black' );
   line( 0, 45, width, 45 );
   pop();
   }
