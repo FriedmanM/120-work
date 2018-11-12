@@ -23,7 +23,7 @@ class Character {
     }
     //DOWN
     if(keyIsDown(40)) {
-      if(this.posY < height - 28) {
+      if(this.posY < height - 55) {
         this.posY += 5;
       }
     }
@@ -35,7 +35,7 @@ class Character {
     }
     //Right
     if(keyIsDown(39)) {
-      if(this.posX < width - 20) {
+      if(this.posX < width - 40) {
         this.posX += 5;
       }
     }
