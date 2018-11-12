@@ -2,6 +2,14 @@ var gameOver = false;
 var link = [];
 var rocks = [];
 
+
+function rockTimer() {
+    let b = new Rock(random(width), random(height), 10);
+    rocks.push(b);
+    // this has the effect of calling itself every x-milliseconds
+    setTimeout(rockTimer, random(2000));
+}
+
 function setup() {
 	createCanvas(800, 600);
   let c = new Character(width/2, height/2, 25);
@@ -42,11 +50,5 @@ function draw() {
   stroke( 'rgb(24, 77, 13)' );
   line( 0, 45, width, 45 );
   pop();
-}
-
-function rockTimer() {
-    let b = new Rock(random(width), random(height), 10);
-    rocks.push(b);
-    // this has the effect of calling itself every x-milliseconds
-    setTimeout(rockTimer, random(2000));
+  }
 }

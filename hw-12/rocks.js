@@ -34,5 +34,4 @@ class Rocks {
           r.splice(i, 1);
       }
     }
-  }
 }
