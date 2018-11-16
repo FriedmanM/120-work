@@ -16,7 +16,7 @@ I followed along the steps for this week, making sure to fully complete each one
 * Finished the assignment and prepped for submission.
 
 ## Issues
-No issues so far.
+So I was unable to get my Link to interact with the balls. I could not make the balls delete when Link runs into them. :(
 
 ## Learning
 I enjoyed learning about making separate files to clean up the main code. I really like having the ability to make objects interact, and can't wait to built my final with what I have in mind.
