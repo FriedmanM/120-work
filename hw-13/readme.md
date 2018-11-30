@@ -17,5 +17,4 @@ I have already begun working on solutions for the issues mentioned above.
 My goal is to have a prototype working next week (Weds). I will then iron out any issues and formatting to get it submitted by Monday (Dec 10th).
 
 So far I have been discovering solutions for the scoreboard and page refresh. I have the working base from the first project to go off, and using my new knowledge from hw-12, I will make the ball interact with the paddles.
-
-A discussion of any work you have completed this week towards your final project.
+---
