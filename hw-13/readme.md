@@ -1,5 +1,5 @@
-#Michael Friedman
-##Proposal for Final Project
+# Michael Friedman
+## Proposal for Final Project
 
 Proposal
 ---
