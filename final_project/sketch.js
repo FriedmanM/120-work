@@ -73,6 +73,8 @@ function draw() {
   ball();
   ballMovement();
   paddleBounce();
+  scorePoint();
+  displayScore();
 
 }
 
@@ -116,9 +118,6 @@ function leftPaddle() {
 }
 
 function rightPaddle() {
-  //var paddleSpeed = yBall - .05;
-  //rightPaddleY = constrain(paddleSpeed, 0, height-150);
-  //rightPaddleY = (yBall - 70) * rightPaddleS;
   fill( 'rgb(105, 252, 102)' );
   rect( rightPaddleX, rightPaddleY, widthPaddle, 150 );
   if (abs(yBall - rightPaddleY) > 0.1) {
@@ -166,3 +165,22 @@ function paddleBounce() {
       }
     }
   }
+}
+
+function displayScore() {
+  push();
+  fill( 'rgb(105, 252, 102)' );
+  textSize(60);
+  text(playerScore, width/2 - 80, 50);
+  text(pcScore, width/2 + 45, 50);
+  pop();
+}
+
+function scorePoint() {
+  if ( xBall < 1 ) {
+    ++pcScore;
+  }
+  else if ( xBall > 775 ) {
+    ++playerScore;
+  }
+}
